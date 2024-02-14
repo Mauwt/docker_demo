@@ -8,6 +8,8 @@ services:
         - "8080:8080"
       depends_on:
         - postgres_db
+      volumes:
+        - ./src:/app/src
   postgres_db:
     container_name: postgres_db
     image: postgres:16.1-alpine3.19
