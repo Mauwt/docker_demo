@@ -18,6 +18,7 @@ public class UserService {
 
     @Autowired
     private ModelMapper modelMapper;
+    //endregion
 
     public UserDto findUserById(Long id){
         User user = userRepository.findById(id)
@@ -40,4 +41,5 @@ public class UserService {
 
         userRepository.save(user);
     }
+
 }
